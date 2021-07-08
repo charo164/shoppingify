@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+@layer components {
+  .ripple {
+    @apply absolute transform scale-0 rounded-full bg-gray-400 animate-rippleAnime;
+  }
+}
+
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
