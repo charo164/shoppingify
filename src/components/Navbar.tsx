@@ -49,10 +49,8 @@ const Navbar = () => {
 
   const count: any = countItems(state?.shoppingCart);
 
-  console.log('NAV_BAR RENDERING');
-
   return (
-    <nav className="flex flex-col justify-between flex-shrink-0 w-10 bg-white xl:w-20 z-50">
+    <nav className="flex flex-col justify-between flex-shrink-0 w-14 bg-white xl:w-20 z-50">
       <div className="flex justify-center items-center pt-6">
         <Link href="/">
           <a>

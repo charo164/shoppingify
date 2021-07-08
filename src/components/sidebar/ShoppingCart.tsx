@@ -50,10 +50,8 @@ const Save = () => {
 
   const isNoReady = !count.count || name === '' || name.length < 3;
 
-  console.log('SAVE RENDERING');
-
   return (
-    <div className=" bg-white px-6 py-4">
+    <div className=" bg-white px-2 py-2 lg:px-5 lg:py-4">
       {!isDraft ? (
         <form
           onSubmit={handleSubmit}
@@ -65,12 +63,12 @@ const Save = () => {
             type="text"
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter a name"
-            className="flex-auto w-full h-full pl-6 pr-12 rounded-xl outline-none"
+            className="flex-auto w-full text-sm lg:text-base h-full pl-4 lg:pl-6 pr-12 rounded-xl outline-none"
           />
           <button
             type="submit"
             disabled={isNoReady}
-            className="absolute right-0 bg-yellow-400 disabled:bg-gray-400 w-1/3 h-full text-white font-bold rounded-lg"
+            className="absolute right-0 text-sm lg:text-base bg-yellow-400 disabled:bg-gray-400 w-1/3 h-full text-white font-bold rounded-lg"
           >
             Save
           </button>
@@ -146,7 +144,6 @@ const ListItems = ({ items, category }) => {
   const { state, dispatch } = useAppContext();
   const isDraft = !(state.draft === '');
 
-  console.log('LIST ITEMS RENDERING');
   return (
     <ul>
       {items.length ? (
@@ -174,8 +171,6 @@ const ShoppingList = () => {
   const categories = convertShoppingCart(state?.shoppingCart);
 
   const count: any = countItems(state?.shoppingCart);
-
-  console.log('SHOPPING LIST RENDERING');
 
   return (
     <div className="flex-auto px-3 lg:px-6 overflow-y-auto">
@@ -208,7 +203,6 @@ const fake = [1, 2, 3, 4, 5, 6];
 const ShoppingCart = () => {
   const { state, dispatch } = useAppContext();
 
-  console.log('SHOPPING CART RENDERING');
   return (
     <div className="flex flex-col h-full bg-yellow-100">
       <div className="flex items-center sm:items-start flex-col px-2 lg:px-6 py-4">

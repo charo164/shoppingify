@@ -9,8 +9,6 @@ const ItemsInfo = () => {
 
   const [item] = getItem(state.shopCategories[category], name);
 
-  console.log('INFO ITEM RENDERING');
-
   return (
     <div className="flex flex-col h-full bg-white py-3 px-4 lg:px-8">
       <div>

@@ -3,11 +3,6 @@
 @tailwind base;
 
 @tailwind components;
-@layer components {
-  .ripple {
-    @apply absolute transform scale-0 rounded-full bg-gray-400 animate-rippleAnime;
-  }
-}
 
 @tailwind utilities;
 

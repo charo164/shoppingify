@@ -6,8 +6,6 @@ import AddItem from './AddItem';
 const SideBarContent = () => {
   const { state } = useAppContext();
 
-  console.log('SIDE BAR CONTENT RENDERING');
-
   return (
     <>
       {state.sideBar === 'items' && <ShoppingCart />}

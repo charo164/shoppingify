@@ -32,8 +32,6 @@ const AddItem = () => {
     dispatch(toggleSidebarType('items'));
   };
 
-  console.log('ADD ITEM RENDERING');
-
   return (
     <div className="flex flex-col px-8 py-6 h-full bg-blue-50 overflow-x-visible overflow-y-auto">
       <h2 className="text-gray-800 text-xl font-bold">Add a new item</h2>
